@@ -1,0 +1,435 @@
+{
+  "status":"SUCCESS",
+  "errors":[
+    {
+      "jobName":"DATA_1557239812696_1",
+      "errorList":[
+        {
+          "id":"1",
+          "migrationId":"Mig_4",
+          "jobId":"200005",
+          "backupPhase":null,
+          "restorePhase":null,
+          "errorType":"JOB_EXECUTION",
+          "type":"ERROR",
+          "atTimeStamp":"",
+          "errorcode":"1148",
+          "errortext":"1148: DSA DSMAIN-BARNC Communication Exception: 1001:(sdt07116K) recv() call has EOF",
+          "rootCauseAnalysis":{
+            "status":"COMPLETED",
+            "recoveryPlan":[
+              {
+                "seqNum":1,
+                "remedy":"Bring DBS API rest server up",
+                "remedyOpcode":"RESTART_REST_SERVER",
+                "remedyInfo":{
+                  "systemName":"sdt07116.labs.teradata.com",
+                  "ipAddress":"10.25.239.74"
+                }
+              },
+              {
+                "seqNum":2,
+                "remedy":"Re-submit the job",
+                "remedyOpcode":"RESUBMIT"
+              }
+            ],
+            "report":null,
+            "systemDiagnostic":[
+              {
+                "system":"SOURCE",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"Bynet",
+                    "diagnostic":"Systems are not connected via BYNET"
+                  },
+                  {
+                    "analyzer":"BarDsmainLeftOverProcess",
+                    "diagnostic":"BarDsmain status is Running, No left over processes"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              },
+              {
+                "system":"TARGET",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"DBS API Rest server is down, unable to determine the issue"
+                  }
+                ]
+              },
+              {
+                "system":"DSA",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"ClientHandlerStatus",
+                    "diagnostic":"ClientHandler status is Running"
+                  },
+                  {
+                    "analyzer":"AMQStatus",
+                    "diagnostic":"Tdactivemq status is Running"
+                  },
+                  {
+                    "analyzer":"AMQBlockedMessages",
+                    "diagnostic":"Tdactivemq message queue backlog 8"
+                  },
+                  {
+                    "analyzer":"DSC",
+                    "diagnostic":"DSC status is RUNNING"
+                  },
+                  {
+                    "analyzer":"DscProcessCount",
+                    "diagnostic":"Number of DSC processes running are 0"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id":"2",
+          "migrationId":"Mig_5",
+          "jobId":"200005",
+          "backupPhase":null,
+          "restorePhase":null,
+          "errorType":"JOB_EXECUTION",
+          "type":"ERROR",
+          "atTimeStamp":"",
+          "errorcode":"1148",
+          "errortext":"1148: DSA DSMAIN-BARNC Communication Exception: 1001:(sdt07116K) recv() call has EOF",
+          "rootCauseAnalysis":{
+            "status":"COMPLETED",
+            "recoveryPlan":[
+              {
+                "seqNum":1,
+                "remedy":"Bring DBS API rest server up",
+                "remedyOpcode":"RESTART_REST_SERVER",
+                "remedyInfo":{
+                  "systemName":"sdt07116.labs.teradata.com",
+                  "ipAddress":"10.25.239.74"
+                }
+              },
+              {
+                "seqNum":2,
+                "remedy":"Re-submit the job",
+                "remedyOpcode":"RESUBMIT"
+              }
+            ],
+            "report":null,
+            "systemDiagnostic":[
+              {
+                "system":"SOURCE",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"Bynet",
+                    "diagnostic":"Systems are not connected via BYNET"
+                  },
+                  {
+                    "analyzer":"BarDsmainLeftOverProcess",
+                    "diagnostic":"BarDsmain status is Running, No left over processes"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              },
+              {
+                "system":"TARGET",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"DBS API Rest server is down, unable to determine the issue"
+                  }
+                ]
+              },
+              {
+                "system":"DSA",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"ClientHandlerStatus",
+                    "diagnostic":"ClientHandler status is Running"
+                  },
+                  {
+                    "analyzer":"AMQStatus",
+                    "diagnostic":"Tdactivemq status is Running"
+                  },
+                  {
+                    "analyzer":"AMQBlockedMessages",
+                    "diagnostic":"Tdactivemq message queue backlog 8"
+                  },
+                  {
+                    "analyzer":"DSC",
+                    "diagnostic":"DSC status is RUNNING"
+                  },
+                  {
+                    "analyzer":"DscProcessCount",
+                    "diagnostic":"Number of DSC processes running are 0"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "jobName":"DATA_1557239812696_1",
+      "errorList":[
+        {
+          "id":"3",
+          "migrationId":"Mig_4",
+          "jobId":"200005",
+          "backupPhase":null,
+          "restorePhase":null,
+          "errorType":"JOB_EXECUTION",
+          "type":"ERROR",
+          "atTimeStamp":"",
+          "errorcode":"1148",
+          "errortext":"1148: DSA DSMAIN-BARNC Communication Exception: 1001:(sdt07116K) recv() call has EOF",
+          "rootCauseAnalysis":{
+            "status":"COMPLETED",
+            "recoveryPlan":[
+              {
+                "seqNum":1,
+                "remedy":"Bring DBS API rest server up",
+                "remedyOpcode":"RESTART_REST_SERVER",
+                "remedyInfo":{
+                  "systemName":"sdt07116.labs.teradata.com",
+                  "ipAddress":"10.25.239.74"
+                }
+              },
+              {
+                "seqNum":2,
+                "remedy":"Re-submit the job",
+                "remedyOpcode":"RESUBMIT"
+              }
+            ],
+            "report":null,
+            "systemDiagnostic":[
+              {
+                "system":"SOURCE",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"Bynet",
+                    "diagnostic":"Systems are not connected via BYNET"
+                  },
+                  {
+                    "analyzer":"BarDsmainLeftOverProcess",
+                    "diagnostic":"BarDsmain status is Running, No left over processes"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              },
+              {
+                "system":"TARGET",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"DBS API Rest server is down, unable to determine the issue"
+                  }
+                ]
+              },
+              {
+                "system":"DSA",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"ClientHandlerStatus",
+                    "diagnostic":"ClientHandler status is Running"
+                  },
+                  {
+                    "analyzer":"AMQStatus",
+                    "diagnostic":"Tdactivemq status is Running"
+                  },
+                  {
+                    "analyzer":"AMQBlockedMessages",
+                    "diagnostic":"Tdactivemq message queue backlog 8"
+                  },
+                  {
+                    "analyzer":"DSC",
+                    "diagnostic":"DSC status is RUNNING"
+                  },
+                  {
+                    "analyzer":"DscProcessCount",
+                    "diagnostic":"Number of DSC processes running are 0"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id":"4",
+          "migrationId":"Mig_5",
+          "jobId":"200005",
+          "backupPhase":null,
+          "restorePhase":null,
+          "errorType":"JOB_EXECUTION",
+          "type":"ERROR",
+          "atTimeStamp":"",
+          "errorcode":"1148",
+          "errortext":"1148: DSA DSMAIN-BARNC Communication Exception: 1001:(sdt07116K) recv() call has EOF",
+          "rootCauseAnalysis":{
+            "status":"COMPLETED",
+            "recoveryPlan":[
+              {
+                "seqNum":1,
+                "remedy":"Bring DBS API rest server up",
+                "remedyOpcode":"RESTART_REST_SERVER",
+                "remedyInfo":{
+                  "systemName":"sdt07116.labs.teradata.com",
+                  "ipAddress":"10.25.239.74"
+                }
+              },
+              {
+                "seqNum":2,
+                "remedy":"Re-submit the job",
+                "remedyOpcode":"RESUBMIT"
+              }
+            ],
+            "report":null,
+            "systemDiagnostic":[
+              {
+                "system":"SOURCE",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"Bynet",
+                    "diagnostic":"Systems are not connected via BYNET"
+                  },
+                  {
+                    "analyzer":"BarDsmainLeftOverProcess",
+                    "diagnostic":"BarDsmain status is Running, No left over processes"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              },
+              {
+                "system":"TARGET",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"DBS API Rest server is down, unable to determine the issue"
+                  }
+                ]
+              },
+              {
+                "system":"DSA",
+                "report":[
+                  {
+                    "analyzer":"TpaStatus",
+                    "diagnostic":"Tpa status is Up and Running"
+                  },
+                  {
+                    "analyzer":"ClientHandlerStatus",
+                    "diagnostic":"ClientHandler status is Running"
+                  },
+                  {
+                    "analyzer":"AMQStatus",
+                    "diagnostic":"Tdactivemq status is Running"
+                  },
+                  {
+                    "analyzer":"AMQBlockedMessages",
+                    "diagnostic":"Tdactivemq message queue backlog 8"
+                  },
+                  {
+                    "analyzer":"DSC",
+                    "diagnostic":"DSC status is RUNNING"
+                  },
+                  {
+                    "analyzer":"DscProcessCount",
+                    "diagnostic":"Number of DSC processes running are 0"
+                  },
+                  {
+                    "analyzer":"DatabaseStatus",
+                    "diagnostic":"Database is Up"
+                  },
+                  {
+                    "analyzer":"VprocStatus",
+                    "diagnostic":"All Vprocs are Up"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
