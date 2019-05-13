@@ -24,7 +24,7 @@ import {MatTableDataSource} from '@angular/material';
 export class HomeComponent implements OnInit {
 
   basicData: Element[];
-  displayedColumns = ['jobname', 'errorType', 'errorcode', 'errortext'];
+  displayedColumns = [ 'errorType', 'errorcode', 'errortext', 'atTimeStamp'];
   isExpansionDetailRow: any;
   dataSource = new MatTableDataSource([]);
 

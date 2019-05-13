@@ -1,0 +1,13 @@
+Follow the steps below to recover from the error.
+<ul *ngFor="let step of steps; index as i" >
+  <li> Step {{ i +1 }} : {{step.remedy}}</li>
+  <li>
+    <div *ngIf="step.remedyInfo">
+      <ul>
+        <li *ngFor="let info of step.remedyInfo | keyvalue">
+          {{info.key}} : {{info.value}}
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>

@@ -4,28 +4,34 @@
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
 
-    <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
-    </ng-container>
+
 
     <!-- Name Column -->
-    <ng-container matColumnDef="name">
-      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    <ng-container matColumnDef="errorType">
+      <mat-header-cell *matHeaderCellDef> Error Type </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.errorType}} </mat-cell>
     </ng-container>
 
     <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+    <ng-container matColumnDef="errorcode">
+      <mat-header-cell *matHeaderCellDef> Error Code </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.errorcode}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="errortext">
+      <mat-header-cell *matHeaderCellDef> Description </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.errortext}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="atTimeStamp">
+      <mat-header-cell *matHeaderCellDef> At TimeStamp </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.atTimeStamp}} </mat-cell>
     </ng-container>
 
     <!-- Expanded Content Column - The detail row is made up of this one column -->
     <ng-container matColumnDef="expandedDetail">
       <mat-cell *matCellDef="let detail">
-        The symbol for {{detail.element.name}} is {{detail.element.symbol}}
+        <app-minirow [recovery]="detail.element.rootCauseAnalysis"></app-minirow>
       </mat-cell>
     </ng-container>
 

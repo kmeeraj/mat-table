@@ -23,13 +23,19 @@ import {
   MatSortModule, MatTableModule, MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
+import { MinirowComponent } from './minirow/minirow.component';
+import { ErrorResolutionComponent } from './error-resolution/error-resolution.component';
+import { SystemComponentComponent } from './system-component/system-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    MinirowComponent,
+    ErrorResolutionComponent,
+    SystemComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +62,7 @@ import {
     CovalentMarkdownModule,
     CovalentDynamicFormsModule,
     CovalentDataTableModule,
-    CovalentTabSelectModule
+    CovalentTabSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

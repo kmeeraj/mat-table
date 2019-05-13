@@ -1,0 +1,6 @@
+<mat-tab-group>
+  <mat-tab label="Error Resolution"> <app-error-resolution [steps]="recovery.recoveryPlan"></app-error-resolution> </mat-tab>
+  <mat-tab label="Source System Diagnostics"> <app-system-component [diagnostics]="recovery.systemDiagnostic[0].report"></app-system-component> </mat-tab>
+  <mat-tab label="Target System Diagnostics"> <app-system-component [diagnostics]="recovery.systemDiagnostic[1].report"></app-system-component> </mat-tab>
+  <mat-tab label="DSC Diagnostics"> <app-system-component [diagnostics]="recovery.systemDiagnostic[2].report"></app-system-component> </mat-tab>
+</mat-tab-group>
